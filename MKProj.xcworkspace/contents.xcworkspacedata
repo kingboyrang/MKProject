@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MKRecharegSetting/MKRecharegSetting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKCallRecord/MKCallRecord.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CZBaseLib/CZBaseLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKContact/MKContact.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKCallBack/MKCallBack.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKDialplateView/MKDialplateView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MKDemo/MKDemo.xcodeproj">
+   </FileRef>
+</Workspace>

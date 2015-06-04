@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D31451D1B0C1F1F003E6333 /* NSData+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144B81B0C1F1F003E6333 /* NSData+CZBase64.m */; };
+		9D31451E1B0C1F1F003E6333 /* NSDate+CZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144BA1B0C1F1F003E6333 /* NSDate+CZExtend.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D31451F1B0C1F1F003E6333 /* NSString+CZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144BC1B0C1F1F003E6333 /* NSString+CZExtend.m */; };
+		9D3145201B0C1F1F003E6333 /* UIDevice+CZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144BE1B0C1F1F003E6333 /* UIDevice+CZExtend.m */; };
+		9D3145211B0C1F1F003E6333 /* UIImage+CZExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144C01B0C1F1F003E6333 /* UIImage+CZExtend.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145221B0C1F1F003E6333 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144C31B0C1F1F003E6333 /* CommonUtils.m */; };
+		9D3145231B0C1F1F003E6333 /* Md5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144C61B0C1F1F003E6333 /* Md5Encrypt.m */; };
+		9D3145241B0C1F1F003E6333 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144C91B0C1F1F003E6333 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145251B0C1F1F003E6333 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144CB1B0C1F1F003E6333 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145261B0C1F1F003E6333 /* PhoneInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144CD1B0C1F1F003E6333 /* PhoneInfo.m */; };
+		9D3145271B0C1F1F003E6333 /* rc4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144CF1B0C1F1F003E6333 /* rc4.cpp */; };
+		9D3145281B0C1F1F003E6333 /* RC4Encrypt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144D21B0C1F1F003E6333 /* RC4Encrypt.mm */; };
+		9D3145291B0C1F1F003E6333 /* codes.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144D41B0C1F1F003E6333 /* codes.c */; };
+		9D31452A1B0C1F1F003E6333 /* sign_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144D61B0C1F1F003E6333 /* sign_md5.c */; };
+		9D31452B1B0C1F1F003E6333 /* sign_rc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144D81B0C1F1F003E6333 /* sign_rc4.c */; };
+		9D31452D1B0C1F1F003E6333 /* CZFilesOperatoion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144DE1B0C1F1F003E6333 /* CZFilesOperatoion.m */; };
+		9D31452E1B0C1F1F003E6333 /* CZRequestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144E21B0C1F1F003E6333 /* CZRequestConfig.m */; };
+		9D31452F1B0C1F1F003E6333 /* CZRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144E41B0C1F1F003E6333 /* CZRequestHandler.m */; };
+		9D3145301B0C1F1F003E6333 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144E71B0C1F1F003E6333 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145311B0C1F1F003E6333 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144EA1B0C1F1F003E6333 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145321B0C1F1F003E6333 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144EC1B0C1F1F003E6333 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145331B0C1F1F003E6333 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144EE1B0C1F1F003E6333 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145341B0C1F1F003E6333 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144F01B0C1F1F003E6333 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145351B0C1F1F003E6333 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144F21B0C1F1F003E6333 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145361B0C1F1F003E6333 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144F61B0C1F1F003E6333 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145371B0C1F1F003E6333 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144F81B0C1F1F003E6333 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145381B0C1F1F003E6333 /* CZRequestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144FC1B0C1F1F003E6333 /* CZRequestObj.m */; };
+		9D3145391B0C1F1F003E6333 /* CZServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3144FE1B0C1F1F003E6333 /* CZServiceManager.m */; };
+		9D31453A1B0C1F1F003E6333 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145011B0C1F1F003E6333 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D31453B1B0C1F1F003E6333 /* CZRequestArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145041B0C1F1F003E6333 /* CZRequestArgs.m */; };
+		9D31453C1B0C1F1F003E6333 /* CZRequestSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145071B0C1F1F003E6333 /* CZRequestSign.m */; };
+		9D31453D1B0C1F1F003E6333 /* CZMyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D31450A1B0C1F1F003E6333 /* CZMyLog.m */; };
+		9D31453E1B0C1F1F003E6333 /* MutilPointDetectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D31450E1B0C1F1F003E6333 /* MutilPointDetectController.m */; };
+		9D31453F1B0C1F1F003E6333 /* MutilPointItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145101B0C1F1F003E6333 /* MutilPointItem.m */; };
+		9D3145401B0C1F1F003E6333 /* ServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145131B0C1F1F003E6333 /* ServiceOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145411B0C1F1F003E6333 /* ServiceOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145151B0C1F1F003E6333 /* ServiceOperationQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145421B0C1F1F003E6333 /* SimplePingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3145181B0C1F1F003E6333 /* SimplePingResult.m */; };
+		9D3145431B0C1F1F003E6333 /* WldhSimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D31451A1B0C1F1F003E6333 /* WldhSimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145441B0C1F1F003E6333 /* WldhSimplePingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D31451C1B0C1F1F003E6333 /* WldhSimplePingManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D3145461B0C1F47003E6333 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3145451B0C1F47003E6333 /* CoreTelephony.framework */; };
+		9D3145481B0C1F4E003E6333 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3145471B0C1F4E003E6333 /* libz.dylib */; };
+		9D31454A1B0C1F54003E6333 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3145491B0C1F54003E6333 /* CFNetwork.framework */; };
+		9D31454C1B0C1F5D003E6333 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D31454B1B0C1F5D003E6333 /* SystemConfiguration.framework */; };
+		9D31454E1B0C1F64003E6333 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D31454D1B0C1F64003E6333 /* MobileCoreServices.framework */; };
+		9D3145501B0C2264003E6333 /* UIDevice+CZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144BD1B0C1F1F003E6333 /* UIDevice+CZExtend.h */; };
+		9D3145511B0C2264003E6333 /* Md5Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144C51B0C1F1F003E6333 /* Md5Encrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145521B0C2264003E6333 /* CZFilesOperatoion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144DD1B0C1F1F003E6333 /* CZFilesOperatoion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145531B0C2264003E6333 /* CZRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144E11B0C1F1F003E6333 /* CZRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145541B0C2264003E6333 /* CZRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144E31B0C1F1F003E6333 /* CZRequestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145551B0C2264003E6333 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144E61B0C1F1F003E6333 /* ASIAuthenticationDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145561B0C2264003E6333 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144E81B0C1F1F003E6333 /* ASICacheDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145571B0C2264003E6333 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144E91B0C1F1F003E6333 /* ASIDataCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145581B0C2265003E6333 /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144EB1B0C1F1F003E6333 /* ASIDataDecompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145591B0C2265003E6333 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144ED1B0C1F1F003E6333 /* ASIDownloadCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455A1B0C2265003E6333 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144EF1B0C1F1F003E6333 /* ASIFormDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455B1B0C2265003E6333 /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F11B0C1F1F003E6333 /* ASIHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455C1B0C2265003E6333 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F31B0C1F1F003E6333 /* ASIHTTPRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455D1B0C2265003E6333 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F41B0C1F1F003E6333 /* ASIHTTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455E1B0C2265003E6333 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F51B0C1F1F003E6333 /* ASIInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31455F1B0C2265003E6333 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F71B0C1F1F003E6333 /* ASINetworkQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145601B0C2265003E6333 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144F91B0C1F1F003E6333 /* ASIProgressDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145611B0C2265003E6333 /* CZRequestObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144FB1B0C1F1F003E6333 /* CZRequestObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145621B0C2265003E6333 /* CZServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144FD1B0C1F1F003E6333 /* CZServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145631B0C2265003E6333 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145001B0C1F1F003E6333 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145641B0C2265003E6333 /* CZRequestArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145031B0C1F1F003E6333 /* CZRequestArgs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145651B0C2265003E6333 /* CZRequestHeaderKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145051B0C1F1F003E6333 /* CZRequestHeaderKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145661B0C2265003E6333 /* CZRequestSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145061B0C1F1F003E6333 /* CZRequestSign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145671B0C2265003E6333 /* CZMyLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145091B0C1F1F003E6333 /* CZMyLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145681B0C2265003E6333 /* MutilPointDetectController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D31450D1B0C1F1F003E6333 /* MutilPointDetectController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3145691B0C2265003E6333 /* MutilPointItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D31450F1B0C1F1F003E6333 /* MutilPointItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456A1B0C22C4003E6333 /* RC4Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144D11B0C1F1F003E6333 /* RC4Encrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456B1B0C23A8003E6333 /* NSString+CZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144BB1B0C1F1F003E6333 /* NSString+CZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456C1B0C2462003E6333 /* NSDate+CZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144B91B0C1F1F003E6333 /* NSDate+CZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456D1B0C248E003E6333 /* UIImage+CZExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144BF1B0C1F1F003E6333 /* UIImage+CZExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456E1B0C249C003E6333 /* PhoneInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144CC1B0C1F1F003E6333 /* PhoneInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D31456F1B0C24E7003E6333 /* ServiceOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145141B0C1F1F003E6333 /* ServiceOperationQueue.h */; };
+		9D3145701B0C24F8003E6333 /* SimplePingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145171B0C1F1F003E6333 /* SimplePingResult.h */; };
+		9D3145711B0C24F8003E6333 /* WldhSimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145191B0C1F1F003E6333 /* WldhSimplePing.h */; };
+		9D3145721B0C24F8003E6333 /* WldhSimplePingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D31451B1B0C1F1F003E6333 /* WldhSimplePingManager.h */; };
+		9D3145731B0C2517003E6333 /* ServiceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3145121B0C1F1F003E6333 /* ServiceOperation.h */; };
+		9D3145741B0C2529003E6333 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144CA1B0C1F1F003E6333 /* OpenUDID.h */; };
+		9D3145751B0C2536003E6333 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3144C81B0C1F1F003E6333 /* KeychainItemWrapper.h */; };
+		9D352FAB1B16A828002DC8AE /* SystemUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F8C1B16A828002DC8AE /* SystemUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FAC1B16A828002DC8AE /* SystemUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F8D1B16A828002DC8AE /* SystemUser.m */; };
+		9D352FAD1B16A828002DC8AE /* CacheDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F8F1B16A828002DC8AE /* CacheDataUtil.h */; };
+		9D352FAE1B16A828002DC8AE /* CacheDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F901B16A828002DC8AE /* CacheDataUtil.m */; };
+		9D352FAF1B16A828002DC8AE /* CZBaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F911B16A828002DC8AE /* CZBaseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FB01B16A828002DC8AE /* CZBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F921B16A828002DC8AE /* CZBaseObject.m */; };
+		9D352FB11B16A828002DC8AE /* ConfigDefineKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F931B16A828002DC8AE /* ConfigDefineKey.h */; };
+		9D352FB21B16A828002DC8AE /* MyCostDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F951B16A828002DC8AE /* MyCostDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FB31B16A828002DC8AE /* MyCostDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F961B16A828002DC8AE /* MyCostDetail.m */; };
+		9D352FB41B16A828002DC8AE /* AlipayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F981B16A828002DC8AE /* AlipayConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FB51B16A828002DC8AE /* AlipayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F991B16A828002DC8AE /* AlipayConfig.m */; };
+		9D352FB61B16A828002DC8AE /* PayConfigHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F9A1B16A828002DC8AE /* PayConfigHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FB71B16A828002DC8AE /* PayConfigHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F9B1B16A828002DC8AE /* PayConfigHandler.m */; };
+		9D352FB81B16A828002DC8AE /* WXPayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F9C1B16A828002DC8AE /* WXPayConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FB91B16A828002DC8AE /* WXPayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352F9D1B16A828002DC8AE /* WXPayConfig.m */; };
+		9D352FBA1B16A828002DC8AE /* PayTypeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352F9F1B16A828002DC8AE /* PayTypeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FBB1B16A828002DC8AE /* PayTypeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352FA01B16A828002DC8AE /* PayTypeNode.m */; };
+		9D352FBC1B16A828002DC8AE /* RechargeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352FA11B16A828002DC8AE /* RechargeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FBD1B16A828002DC8AE /* RechargeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352FA21B16A828002DC8AE /* RechargeManager.m */; };
+		9D352FBE1B16A828002DC8AE /* RechargeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352FA31B16A828002DC8AE /* RechargeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FBF1B16A828002DC8AE /* RechargeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352FA41B16A828002DC8AE /* RechargeNode.m */; };
+		9D352FC01B16A828002DC8AE /* ConfigSettingHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352FA61B16A828002DC8AE /* ConfigSettingHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FC11B16A828002DC8AE /* ConfigSettingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352FA71B16A828002DC8AE /* ConfigSettingHandler.m */; };
+		9D352FC21B16A828002DC8AE /* AppConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D352FA91B16A828002DC8AE /* AppConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D352FC31B16A828002DC8AE /* AppConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D352FAA1B16A828002DC8AE /* AppConfigManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D31449A1B0C1ED1003E6333 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D31449C1B0C1ED1003E6333 /* libCZBaseLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZBaseLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3144B71B0C1F1F003E6333 /* NSData+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CZBase64.h"; sourceTree = "<group>"; };
+		9D3144B81B0C1F1F003E6333 /* NSData+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CZBase64.m"; sourceTree = "<group>"; };
+		9D3144B91B0C1F1F003E6333 /* NSDate+CZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CZExtend.h"; sourceTree = "<group>"; };
+		9D3144BA1B0C1F1F003E6333 /* NSDate+CZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CZExtend.m"; sourceTree = "<group>"; };
+		9D3144BB1B0C1F1F003E6333 /* NSString+CZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZExtend.h"; sourceTree = "<group>"; };
+		9D3144BC1B0C1F1F003E6333 /* NSString+CZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZExtend.m"; sourceTree = "<group>"; };
+		9D3144BD1B0C1F1F003E6333 /* UIDevice+CZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CZExtend.h"; sourceTree = "<group>"; };
+		9D3144BE1B0C1F1F003E6333 /* UIDevice+CZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CZExtend.m"; sourceTree = "<group>"; };
+		9D3144BF1B0C1F1F003E6333 /* UIImage+CZExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CZExtend.h"; sourceTree = "<group>"; };
+		9D3144C01B0C1F1F003E6333 /* UIImage+CZExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CZExtend.m"; sourceTree = "<group>"; };
+		9D3144C21B0C1F1F003E6333 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		9D3144C31B0C1F1F003E6333 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		9D3144C51B0C1F1F003E6333 /* Md5Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Md5Encrypt.h; sourceTree = "<group>"; };
+		9D3144C61B0C1F1F003E6333 /* Md5Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5Encrypt.m; sourceTree = "<group>"; };
+		9D3144C81B0C1F1F003E6333 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		9D3144C91B0C1F1F003E6333 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		9D3144CA1B0C1F1F003E6333 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		9D3144CB1B0C1F1F003E6333 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		9D3144CC1B0C1F1F003E6333 /* PhoneInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneInfo.h; sourceTree = "<group>"; };
+		9D3144CD1B0C1F1F003E6333 /* PhoneInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneInfo.m; sourceTree = "<group>"; };
+		9D3144CF1B0C1F1F003E6333 /* rc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rc4.cpp; sourceTree = "<group>"; };
+		9D3144D01B0C1F1F003E6333 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		9D3144D11B0C1F1F003E6333 /* RC4Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RC4Encrypt.h; sourceTree = "<group>"; };
+		9D3144D21B0C1F1F003E6333 /* RC4Encrypt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RC4Encrypt.mm; sourceTree = "<group>"; };
+		9D3144D41B0C1F1F003E6333 /* codes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = codes.c; sourceTree = "<group>"; };
+		9D3144D51B0C1F1F003E6333 /* codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codes.h; sourceTree = "<group>"; };
+		9D3144D61B0C1F1F003E6333 /* sign_md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign_md5.c; sourceTree = "<group>"; };
+		9D3144D71B0C1F1F003E6333 /* sign_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sign_md5.h; sourceTree = "<group>"; };
+		9D3144D81B0C1F1F003E6333 /* sign_rc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign_rc4.c; sourceTree = "<group>"; };
+		9D3144D91B0C1F1F003E6333 /* sign_rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sign_rc4.h; sourceTree = "<group>"; };
+		9D3144DD1B0C1F1F003E6333 /* CZFilesOperatoion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFilesOperatoion.h; sourceTree = "<group>"; };
+		9D3144DE1B0C1F1F003E6333 /* CZFilesOperatoion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFilesOperatoion.m; sourceTree = "<group>"; };
+		9D3144E11B0C1F1F003E6333 /* CZRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestConfig.h; sourceTree = "<group>"; };
+		9D3144E21B0C1F1F003E6333 /* CZRequestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRequestConfig.m; sourceTree = "<group>"; };
+		9D3144E31B0C1F1F003E6333 /* CZRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestHandler.h; sourceTree = "<group>"; };
+		9D3144E41B0C1F1F003E6333 /* CZRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRequestHandler.m; sourceTree = "<group>"; };
+		9D3144E61B0C1F1F003E6333 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		9D3144E71B0C1F1F003E6333 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		9D3144E81B0C1F1F003E6333 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		9D3144E91B0C1F1F003E6333 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		9D3144EA1B0C1F1F003E6333 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		9D3144EB1B0C1F1F003E6333 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		9D3144EC1B0C1F1F003E6333 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		9D3144ED1B0C1F1F003E6333 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		9D3144EE1B0C1F1F003E6333 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		9D3144EF1B0C1F1F003E6333 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		9D3144F01B0C1F1F003E6333 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		9D3144F11B0C1F1F003E6333 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		9D3144F21B0C1F1F003E6333 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		9D3144F31B0C1F1F003E6333 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		9D3144F41B0C1F1F003E6333 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		9D3144F51B0C1F1F003E6333 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		9D3144F61B0C1F1F003E6333 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		9D3144F71B0C1F1F003E6333 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		9D3144F81B0C1F1F003E6333 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		9D3144F91B0C1F1F003E6333 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		9D3144FB1B0C1F1F003E6333 /* CZRequestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestObj.h; sourceTree = "<group>"; };
+		9D3144FC1B0C1F1F003E6333 /* CZRequestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRequestObj.m; sourceTree = "<group>"; };
+		9D3144FD1B0C1F1F003E6333 /* CZServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZServiceManager.h; sourceTree = "<group>"; };
+		9D3144FE1B0C1F1F003E6333 /* CZServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZServiceManager.m; sourceTree = "<group>"; };
+		9D3145001B0C1F1F003E6333 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9D3145011B0C1F1F003E6333 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9D3145031B0C1F1F003E6333 /* CZRequestArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestArgs.h; sourceTree = "<group>"; };
+		9D3145041B0C1F1F003E6333 /* CZRequestArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRequestArgs.m; sourceTree = "<group>"; };
+		9D3145051B0C1F1F003E6333 /* CZRequestHeaderKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestHeaderKey.h; sourceTree = "<group>"; };
+		9D3145061B0C1F1F003E6333 /* CZRequestSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRequestSign.h; sourceTree = "<group>"; };
+		9D3145071B0C1F1F003E6333 /* CZRequestSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRequestSign.m; sourceTree = "<group>"; };
+		9D3145091B0C1F1F003E6333 /* CZMyLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZMyLog.h; sourceTree = "<group>"; };
+		9D31450A1B0C1F1F003E6333 /* CZMyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZMyLog.m; sourceTree = "<group>"; };
+		9D31450D1B0C1F1F003E6333 /* MutilPointDetectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutilPointDetectController.h; sourceTree = "<group>"; };
+		9D31450E1B0C1F1F003E6333 /* MutilPointDetectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutilPointDetectController.m; sourceTree = "<group>"; };
+		9D31450F1B0C1F1F003E6333 /* MutilPointItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutilPointItem.h; sourceTree = "<group>"; };
+		9D3145101B0C1F1F003E6333 /* MutilPointItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutilPointItem.m; sourceTree = "<group>"; };
+		9D3145121B0C1F1F003E6333 /* ServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceOperation.h; sourceTree = "<group>"; };
+		9D3145131B0C1F1F003E6333 /* ServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceOperation.m; sourceTree = "<group>"; };
+		9D3145141B0C1F1F003E6333 /* ServiceOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceOperationQueue.h; sourceTree = "<group>"; };
+		9D3145151B0C1F1F003E6333 /* ServiceOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceOperationQueue.m; sourceTree = "<group>"; };
+		9D3145171B0C1F1F003E6333 /* SimplePingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePingResult.h; sourceTree = "<group>"; };
+		9D3145181B0C1F1F003E6333 /* SimplePingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePingResult.m; sourceTree = "<group>"; };
+		9D3145191B0C1F1F003E6333 /* WldhSimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WldhSimplePing.h; sourceTree = "<group>"; };
+		9D31451A1B0C1F1F003E6333 /* WldhSimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WldhSimplePing.m; sourceTree = "<group>"; };
+		9D31451B1B0C1F1F003E6333 /* WldhSimplePingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WldhSimplePingManager.h; sourceTree = "<group>"; };
+		9D31451C1B0C1F1F003E6333 /* WldhSimplePingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WldhSimplePingManager.m; sourceTree = "<group>"; };
+		9D3145451B0C1F47003E6333 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9D3145471B0C1F4E003E6333 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9D3145491B0C1F54003E6333 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9D31454B1B0C1F5D003E6333 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9D31454D1B0C1F64003E6333 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9D352F8C1B16A828002DC8AE /* SystemUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemUser.h; sourceTree = "<group>"; };
+		9D352F8D1B16A828002DC8AE /* SystemUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemUser.m; sourceTree = "<group>"; };
+		9D352F8F1B16A828002DC8AE /* CacheDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheDataUtil.h; sourceTree = "<group>"; };
+		9D352F901B16A828002DC8AE /* CacheDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheDataUtil.m; sourceTree = "<group>"; };
+		9D352F911B16A828002DC8AE /* CZBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZBaseObject.h; sourceTree = "<group>"; };
+		9D352F921B16A828002DC8AE /* CZBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZBaseObject.m; sourceTree = "<group>"; };
+		9D352F931B16A828002DC8AE /* ConfigDefineKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigDefineKey.h; sourceTree = "<group>"; };
+		9D352F951B16A828002DC8AE /* MyCostDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCostDetail.h; sourceTree = "<group>"; };
+		9D352F961B16A828002DC8AE /* MyCostDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCostDetail.m; sourceTree = "<group>"; };
+		9D352F981B16A828002DC8AE /* AlipayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayConfig.h; sourceTree = "<group>"; };
+		9D352F991B16A828002DC8AE /* AlipayConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayConfig.m; sourceTree = "<group>"; };
+		9D352F9A1B16A828002DC8AE /* PayConfigHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayConfigHandler.h; sourceTree = "<group>"; };
+		9D352F9B1B16A828002DC8AE /* PayConfigHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayConfigHandler.m; sourceTree = "<group>"; };
+		9D352F9C1B16A828002DC8AE /* WXPayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPayConfig.h; sourceTree = "<group>"; };
+		9D352F9D1B16A828002DC8AE /* WXPayConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPayConfig.m; sourceTree = "<group>"; };
+		9D352F9F1B16A828002DC8AE /* PayTypeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTypeNode.h; sourceTree = "<group>"; };
+		9D352FA01B16A828002DC8AE /* PayTypeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTypeNode.m; sourceTree = "<group>"; };
+		9D352FA11B16A828002DC8AE /* RechargeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeManager.h; sourceTree = "<group>"; };
+		9D352FA21B16A828002DC8AE /* RechargeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeManager.m; sourceTree = "<group>"; };
+		9D352FA31B16A828002DC8AE /* RechargeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeNode.h; sourceTree = "<group>"; };
+		9D352FA41B16A828002DC8AE /* RechargeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeNode.m; sourceTree = "<group>"; };
+		9D352FA61B16A828002DC8AE /* ConfigSettingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigSettingHandler.h; sourceTree = "<group>"; };
+		9D352FA71B16A828002DC8AE /* ConfigSettingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigSettingHandler.m; sourceTree = "<group>"; };
+		9D352FA91B16A828002DC8AE /* AppConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfigManager.h; sourceTree = "<group>"; };
+		9D352FAA1B16A828002DC8AE /* AppConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfigManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D3144991B0C1ED1003E6333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D31454E1B0C1F64003E6333 /* MobileCoreServices.framework in Frameworks */,
+				9D31454C1B0C1F5D003E6333 /* SystemConfiguration.framework in Frameworks */,
+				9D31454A1B0C1F54003E6333 /* CFNetwork.framework in Frameworks */,
+				9D3145481B0C1F4E003E6333 /* libz.dylib in Frameworks */,
+				9D3145461B0C1F47003E6333 /* CoreTelephony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D3144931B0C1ED1003E6333 = {
+			isa = PBXGroup;
+			children = (
+				9D31454D1B0C1F64003E6333 /* MobileCoreServices.framework */,
+				9D31454B1B0C1F5D003E6333 /* SystemConfiguration.framework */,
+				9D3145491B0C1F54003E6333 /* CFNetwork.framework */,
+				9D3145471B0C1F4E003E6333 /* libz.dylib */,
+				9D3145451B0C1F47003E6333 /* CoreTelephony.framework */,
+				9D31449E1B0C1ED1003E6333 /* CZBaseLib */,
+				9D31449D1B0C1ED1003E6333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D31449D1B0C1ED1003E6333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D31449C1B0C1ED1003E6333 /* libCZBaseLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D31449E1B0C1ED1003E6333 /* CZBaseLib */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F8A1B16A828002DC8AE /* Logic */,
+				9D3144B61B0C1F1F003E6333 /* Categories */,
+				9D3144C11B0C1F1F003E6333 /* Common */,
+				9D3144DC1B0C1F1F003E6333 /* Files */,
+				9D3144DF1B0C1F1F003E6333 /* Http */,
+				9D3145081B0C1F1F003E6333 /* Logs */,
+				9D31450B1B0C1F1F003E6333 /* MlutilPointDetect */,
+			);
+			path = CZBaseLib;
+			sourceTree = "<group>";
+		};
+		9D3144B61B0C1F1F003E6333 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144B71B0C1F1F003E6333 /* NSData+CZBase64.h */,
+				9D3144B81B0C1F1F003E6333 /* NSData+CZBase64.m */,
+				9D3144B91B0C1F1F003E6333 /* NSDate+CZExtend.h */,
+				9D3144BA1B0C1F1F003E6333 /* NSDate+CZExtend.m */,
+				9D3144BB1B0C1F1F003E6333 /* NSString+CZExtend.h */,
+				9D3144BC1B0C1F1F003E6333 /* NSString+CZExtend.m */,
+				9D3144BD1B0C1F1F003E6333 /* UIDevice+CZExtend.h */,
+				9D3144BE1B0C1F1F003E6333 /* UIDevice+CZExtend.m */,
+				9D3144BF1B0C1F1F003E6333 /* UIImage+CZExtend.h */,
+				9D3144C01B0C1F1F003E6333 /* UIImage+CZExtend.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9D3144C11B0C1F1F003E6333 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144C21B0C1F1F003E6333 /* CommonUtils.h */,
+				9D3144C31B0C1F1F003E6333 /* CommonUtils.m */,
+				9D3144C41B0C1F1F003E6333 /* md5 */,
+				9D3144C71B0C1F1F003E6333 /* Phone */,
+				9D3144CE1B0C1F1F003E6333 /* rc4 */,
+				9D3144D31B0C1F1F003E6333 /* sign */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D3144C41B0C1F1F003E6333 /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144C51B0C1F1F003E6333 /* Md5Encrypt.h */,
+				9D3144C61B0C1F1F003E6333 /* Md5Encrypt.m */,
+			);
+			path = md5;
+			sourceTree = "<group>";
+		};
+		9D3144C71B0C1F1F003E6333 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144C81B0C1F1F003E6333 /* KeychainItemWrapper.h */,
+				9D3144C91B0C1F1F003E6333 /* KeychainItemWrapper.m */,
+				9D3144CA1B0C1F1F003E6333 /* OpenUDID.h */,
+				9D3144CB1B0C1F1F003E6333 /* OpenUDID.m */,
+				9D3144CC1B0C1F1F003E6333 /* PhoneInfo.h */,
+				9D3144CD1B0C1F1F003E6333 /* PhoneInfo.m */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		9D3144CE1B0C1F1F003E6333 /* rc4 */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144CF1B0C1F1F003E6333 /* rc4.cpp */,
+				9D3144D01B0C1F1F003E6333 /* rc4.h */,
+				9D3144D11B0C1F1F003E6333 /* RC4Encrypt.h */,
+				9D3144D21B0C1F1F003E6333 /* RC4Encrypt.mm */,
+			);
+			path = rc4;
+			sourceTree = "<group>";
+		};
+		9D3144D31B0C1F1F003E6333 /* sign */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144D41B0C1F1F003E6333 /* codes.c */,
+				9D3144D51B0C1F1F003E6333 /* codes.h */,
+				9D3144D61B0C1F1F003E6333 /* sign_md5.c */,
+				9D3144D71B0C1F1F003E6333 /* sign_md5.h */,
+				9D3144D81B0C1F1F003E6333 /* sign_rc4.c */,
+				9D3144D91B0C1F1F003E6333 /* sign_rc4.h */,
+			);
+			path = sign;
+			sourceTree = "<group>";
+		};
+		9D3144DC1B0C1F1F003E6333 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144DD1B0C1F1F003E6333 /* CZFilesOperatoion.h */,
+				9D3144DE1B0C1F1F003E6333 /* CZFilesOperatoion.m */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		9D3144DF1B0C1F1F003E6333 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144E01B0C1F1F003E6333 /* HttpConfig */,
+				9D3144E51B0C1F1F003E6333 /* HttpLib */,
+				9D3144FA1B0C1F1F003E6333 /* HttpRequest */,
+				9D3144FF1B0C1F1F003E6333 /* Reachability */,
+				9D3145021B0C1F1F003E6333 /* RequestModel */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		9D3144E01B0C1F1F003E6333 /* HttpConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144E11B0C1F1F003E6333 /* CZRequestConfig.h */,
+				9D3144E21B0C1F1F003E6333 /* CZRequestConfig.m */,
+				9D3144E31B0C1F1F003E6333 /* CZRequestHandler.h */,
+				9D3144E41B0C1F1F003E6333 /* CZRequestHandler.m */,
+			);
+			path = HttpConfig;
+			sourceTree = "<group>";
+		};
+		9D3144E51B0C1F1F003E6333 /* HttpLib */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144E61B0C1F1F003E6333 /* ASIAuthenticationDialog.h */,
+				9D3144E71B0C1F1F003E6333 /* ASIAuthenticationDialog.m */,
+				9D3144E81B0C1F1F003E6333 /* ASICacheDelegate.h */,
+				9D3144E91B0C1F1F003E6333 /* ASIDataCompressor.h */,
+				9D3144EA1B0C1F1F003E6333 /* ASIDataCompressor.m */,
+				9D3144EB1B0C1F1F003E6333 /* ASIDataDecompressor.h */,
+				9D3144EC1B0C1F1F003E6333 /* ASIDataDecompressor.m */,
+				9D3144ED1B0C1F1F003E6333 /* ASIDownloadCache.h */,
+				9D3144EE1B0C1F1F003E6333 /* ASIDownloadCache.m */,
+				9D3144EF1B0C1F1F003E6333 /* ASIFormDataRequest.h */,
+				9D3144F01B0C1F1F003E6333 /* ASIFormDataRequest.m */,
+				9D3144F11B0C1F1F003E6333 /* ASIHTTPRequest.h */,
+				9D3144F21B0C1F1F003E6333 /* ASIHTTPRequest.m */,
+				9D3144F31B0C1F1F003E6333 /* ASIHTTPRequestConfig.h */,
+				9D3144F41B0C1F1F003E6333 /* ASIHTTPRequestDelegate.h */,
+				9D3144F51B0C1F1F003E6333 /* ASIInputStream.h */,
+				9D3144F61B0C1F1F003E6333 /* ASIInputStream.m */,
+				9D3144F71B0C1F1F003E6333 /* ASINetworkQueue.h */,
+				9D3144F81B0C1F1F003E6333 /* ASINetworkQueue.m */,
+				9D3144F91B0C1F1F003E6333 /* ASIProgressDelegate.h */,
+			);
+			path = HttpLib;
+			sourceTree = "<group>";
+		};
+		9D3144FA1B0C1F1F003E6333 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				9D3144FB1B0C1F1F003E6333 /* CZRequestObj.h */,
+				9D3144FC1B0C1F1F003E6333 /* CZRequestObj.m */,
+				9D3144FD1B0C1F1F003E6333 /* CZServiceManager.h */,
+				9D3144FE1B0C1F1F003E6333 /* CZServiceManager.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		9D3144FF1B0C1F1F003E6333 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9D3145001B0C1F1F003E6333 /* Reachability.h */,
+				9D3145011B0C1F1F003E6333 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		9D3145021B0C1F1F003E6333 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D3145031B0C1F1F003E6333 /* CZRequestArgs.h */,
+				9D3145041B0C1F1F003E6333 /* CZRequestArgs.m */,
+				9D3145051B0C1F1F003E6333 /* CZRequestHeaderKey.h */,
+				9D3145061B0C1F1F003E6333 /* CZRequestSign.h */,
+				9D3145071B0C1F1F003E6333 /* CZRequestSign.m */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		9D3145081B0C1F1F003E6333 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				9D3145091B0C1F1F003E6333 /* CZMyLog.h */,
+				9D31450A1B0C1F1F003E6333 /* CZMyLog.m */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		9D31450B1B0C1F1F003E6333 /* MlutilPointDetect */ = {
+			isa = PBXGroup;
+			children = (
+				9D31450C1B0C1F1F003E6333 /* MutilPointDetect */,
+				9D3145111B0C1F1F003E6333 /* Operation */,
+				9D3145161B0C1F1F003E6333 /* Ping */,
+			);
+			path = MlutilPointDetect;
+			sourceTree = "<group>";
+		};
+		9D31450C1B0C1F1F003E6333 /* MutilPointDetect */ = {
+			isa = PBXGroup;
+			children = (
+				9D31450D1B0C1F1F003E6333 /* MutilPointDetectController.h */,
+				9D31450E1B0C1F1F003E6333 /* MutilPointDetectController.m */,
+				9D31450F1B0C1F1F003E6333 /* MutilPointItem.h */,
+				9D3145101B0C1F1F003E6333 /* MutilPointItem.m */,
+			);
+			path = MutilPointDetect;
+			sourceTree = "<group>";
+		};
+		9D3145111B0C1F1F003E6333 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				9D3145121B0C1F1F003E6333 /* ServiceOperation.h */,
+				9D3145131B0C1F1F003E6333 /* ServiceOperation.m */,
+				9D3145141B0C1F1F003E6333 /* ServiceOperationQueue.h */,
+				9D3145151B0C1F1F003E6333 /* ServiceOperationQueue.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		9D3145161B0C1F1F003E6333 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				9D3145171B0C1F1F003E6333 /* SimplePingResult.h */,
+				9D3145181B0C1F1F003E6333 /* SimplePingResult.m */,
+				9D3145191B0C1F1F003E6333 /* WldhSimplePing.h */,
+				9D31451A1B0C1F1F003E6333 /* WldhSimplePing.m */,
+				9D31451B1B0C1F1F003E6333 /* WldhSimplePingManager.h */,
+				9D31451C1B0C1F1F003E6333 /* WldhSimplePingManager.m */,
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+		9D352F8A1B16A828002DC8AE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F8B1B16A828002DC8AE /* Account */,
+				9D352F8E1B16A828002DC8AE /* Common */,
+				9D352F931B16A828002DC8AE /* ConfigDefineKey.h */,
+				9D352F941B16A828002DC8AE /* Cost */,
+				9D352F971B16A828002DC8AE /* PayConfig */,
+				9D352F9E1B16A828002DC8AE /* Recharge */,
+				9D352FA51B16A828002DC8AE /* Setting */,
+				9D352FA81B16A828002DC8AE /* StaticsConfig */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		9D352F8B1B16A828002DC8AE /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F8C1B16A828002DC8AE /* SystemUser.h */,
+				9D352F8D1B16A828002DC8AE /* SystemUser.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9D352F8E1B16A828002DC8AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F8F1B16A828002DC8AE /* CacheDataUtil.h */,
+				9D352F901B16A828002DC8AE /* CacheDataUtil.m */,
+				9D352F911B16A828002DC8AE /* CZBaseObject.h */,
+				9D352F921B16A828002DC8AE /* CZBaseObject.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D352F941B16A828002DC8AE /* Cost */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F951B16A828002DC8AE /* MyCostDetail.h */,
+				9D352F961B16A828002DC8AE /* MyCostDetail.m */,
+			);
+			path = Cost;
+			sourceTree = "<group>";
+		};
+		9D352F971B16A828002DC8AE /* PayConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F981B16A828002DC8AE /* AlipayConfig.h */,
+				9D352F991B16A828002DC8AE /* AlipayConfig.m */,
+				9D352F9A1B16A828002DC8AE /* PayConfigHandler.h */,
+				9D352F9B1B16A828002DC8AE /* PayConfigHandler.m */,
+				9D352F9C1B16A828002DC8AE /* WXPayConfig.h */,
+				9D352F9D1B16A828002DC8AE /* WXPayConfig.m */,
+			);
+			path = PayConfig;
+			sourceTree = "<group>";
+		};
+		9D352F9E1B16A828002DC8AE /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+				9D352F9F1B16A828002DC8AE /* PayTypeNode.h */,
+				9D352FA01B16A828002DC8AE /* PayTypeNode.m */,
+				9D352FA11B16A828002DC8AE /* RechargeManager.h */,
+				9D352FA21B16A828002DC8AE /* RechargeManager.m */,
+				9D352FA31B16A828002DC8AE /* RechargeNode.h */,
+				9D352FA41B16A828002DC8AE /* RechargeNode.m */,
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		9D352FA51B16A828002DC8AE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9D352FA61B16A828002DC8AE /* ConfigSettingHandler.h */,
+				9D352FA71B16A828002DC8AE /* ConfigSettingHandler.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9D352FA81B16A828002DC8AE /* StaticsConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9D352FA91B16A828002DC8AE /* AppConfigManager.h */,
+				9D352FAA1B16A828002DC8AE /* AppConfigManager.m */,
+			);
+			path = StaticsConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D31454F1B0C2213003E6333 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3145511B0C2264003E6333 /* Md5Encrypt.h in Headers */,
+				9D31456A1B0C22C4003E6333 /* RC4Encrypt.h in Headers */,
+				9D3145631B0C2265003E6333 /* Reachability.h in Headers */,
+				9D31456B1B0C23A8003E6333 /* NSString+CZExtend.h in Headers */,
+				9D3145541B0C2264003E6333 /* CZRequestHandler.h in Headers */,
+				9D31455F1B0C2265003E6333 /* ASINetworkQueue.h in Headers */,
+				9D3145591B0C2265003E6333 /* ASIDownloadCache.h in Headers */,
+				9D3145581B0C2265003E6333 /* ASIDataDecompressor.h in Headers */,
+				9D3145551B0C2264003E6333 /* ASIAuthenticationDialog.h in Headers */,
+				9D31455C1B0C2265003E6333 /* ASIHTTPRequestConfig.h in Headers */,
+				9D3145561B0C2264003E6333 /* ASICacheDelegate.h in Headers */,
+				9D31455D1B0C2265003E6333 /* ASIHTTPRequestDelegate.h in Headers */,
+				9D3145601B0C2265003E6333 /* ASIProgressDelegate.h in Headers */,
+				9D31455A1B0C2265003E6333 /* ASIFormDataRequest.h in Headers */,
+				9D31455B1B0C2265003E6333 /* ASIHTTPRequest.h in Headers */,
+				9D31455E1B0C2265003E6333 /* ASIInputStream.h in Headers */,
+				9D3145571B0C2264003E6333 /* ASIDataCompressor.h in Headers */,
+				9D3145661B0C2265003E6333 /* CZRequestSign.h in Headers */,
+				9D3145651B0C2265003E6333 /* CZRequestHeaderKey.h in Headers */,
+				9D3145691B0C2265003E6333 /* MutilPointItem.h in Headers */,
+				9D352FB21B16A828002DC8AE /* MyCostDetail.h in Headers */,
+				9D352FAF1B16A828002DC8AE /* CZBaseObject.h in Headers */,
+				9D352FAB1B16A828002DC8AE /* SystemUser.h in Headers */,
+				9D352FB81B16A828002DC8AE /* WXPayConfig.h in Headers */,
+				9D352FBA1B16A828002DC8AE /* PayTypeNode.h in Headers */,
+				9D352FBE1B16A828002DC8AE /* RechargeNode.h in Headers */,
+				9D352FBC1B16A828002DC8AE /* RechargeManager.h in Headers */,
+				9D352FC21B16A828002DC8AE /* AppConfigManager.h in Headers */,
+				9D352FC01B16A828002DC8AE /* ConfigSettingHandler.h in Headers */,
+				9D352FB61B16A828002DC8AE /* PayConfigHandler.h in Headers */,
+				9D352FB41B16A828002DC8AE /* AlipayConfig.h in Headers */,
+				9D3145611B0C2265003E6333 /* CZRequestObj.h in Headers */,
+				9D352FB11B16A828002DC8AE /* ConfigDefineKey.h in Headers */,
+				9D3145681B0C2265003E6333 /* MutilPointDetectController.h in Headers */,
+				9D3145641B0C2265003E6333 /* CZRequestArgs.h in Headers */,
+				9D3145531B0C2264003E6333 /* CZRequestConfig.h in Headers */,
+				9D31456C1B0C2462003E6333 /* NSDate+CZExtend.h in Headers */,
+				9D3145621B0C2265003E6333 /* CZServiceManager.h in Headers */,
+				9D31456E1B0C249C003E6333 /* PhoneInfo.h in Headers */,
+				9D31456D1B0C248E003E6333 /* UIImage+CZExtend.h in Headers */,
+				9D3145671B0C2265003E6333 /* CZMyLog.h in Headers */,
+				9D3145521B0C2264003E6333 /* CZFilesOperatoion.h in Headers */,
+				9D3145751B0C2536003E6333 /* KeychainItemWrapper.h in Headers */,
+				9D3145741B0C2529003E6333 /* OpenUDID.h in Headers */,
+				9D352FAD1B16A828002DC8AE /* CacheDataUtil.h in Headers */,
+				9D3145731B0C2517003E6333 /* ServiceOperation.h in Headers */,
+				9D3145701B0C24F8003E6333 /* SimplePingResult.h in Headers */,
+				9D3145711B0C24F8003E6333 /* WldhSimplePing.h in Headers */,
+				9D3145721B0C24F8003E6333 /* WldhSimplePingManager.h in Headers */,
+				9D31456F1B0C24E7003E6333 /* ServiceOperationQueue.h in Headers */,
+				9D3145501B0C2264003E6333 /* UIDevice+CZExtend.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9D31449B1B0C1ED1003E6333 /* CZBaseLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3144B01B0C1ED1003E6333 /* Build configuration list for PBXNativeTarget "CZBaseLib" */;
+			buildPhases = (
+				9D3144981B0C1ED1003E6333 /* Sources */,
+				9D3144991B0C1ED1003E6333 /* Frameworks */,
+				9D31449A1B0C1ED1003E6333 /* CopyFiles */,
+				9D31454F1B0C2213003E6333 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZBaseLib;
+			productName = CZBaseLib;
+			productReference = 9D31449C1B0C1ED1003E6333 /* libCZBaseLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D3144941B0C1ED1003E6333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Chuzhong;
+				TargetAttributes = {
+					9D31449B1B0C1ED1003E6333 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D3144971B0C1ED1003E6333 /* Build configuration list for PBXProject "CZBaseLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D3144931B0C1ED1003E6333;
+			productRefGroup = 9D31449D1B0C1ED1003E6333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D31449B1B0C1ED1003E6333 /* CZBaseLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D3144981B0C1ED1003E6333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D352FC31B16A828002DC8AE /* AppConfigManager.m in Sources */,
+				9D3145201B0C1F1F003E6333 /* UIDevice+CZExtend.m in Sources */,
+				9D352FC11B16A828002DC8AE /* ConfigSettingHandler.m in Sources */,
+				9D31453C1B0C1F1F003E6333 /* CZRequestSign.m in Sources */,
+				9D3145411B0C1F1F003E6333 /* ServiceOperationQueue.m in Sources */,
+				9D3145291B0C1F1F003E6333 /* codes.c in Sources */,
+				9D3145391B0C1F1F003E6333 /* CZServiceManager.m in Sources */,
+				9D3145371B0C1F1F003E6333 /* ASINetworkQueue.m in Sources */,
+				9D31453B1B0C1F1F003E6333 /* CZRequestArgs.m in Sources */,
+				9D31453A1B0C1F1F003E6333 /* Reachability.m in Sources */,
+				9D31453F1B0C1F1F003E6333 /* MutilPointItem.m in Sources */,
+				9D31452D1B0C1F1F003E6333 /* CZFilesOperatoion.m in Sources */,
+				9D3145431B0C1F1F003E6333 /* WldhSimplePing.m in Sources */,
+				9D352FB31B16A828002DC8AE /* MyCostDetail.m in Sources */,
+				9D352FAC1B16A828002DC8AE /* SystemUser.m in Sources */,
+				9D352FAE1B16A828002DC8AE /* CacheDataUtil.m in Sources */,
+				9D31451D1B0C1F1F003E6333 /* NSData+CZBase64.m in Sources */,
+				9D3145261B0C1F1F003E6333 /* PhoneInfo.m in Sources */,
+				9D352FBF1B16A828002DC8AE /* RechargeNode.m in Sources */,
+				9D31452B1B0C1F1F003E6333 /* sign_rc4.c in Sources */,
+				9D3145211B0C1F1F003E6333 /* UIImage+CZExtend.m in Sources */,
+				9D3145251B0C1F1F003E6333 /* OpenUDID.m in Sources */,
+				9D3145421B0C1F1F003E6333 /* SimplePingResult.m in Sources */,
+				9D3145311B0C1F1F003E6333 /* ASIDataCompressor.m in Sources */,
+				9D31451E1B0C1F1F003E6333 /* NSDate+CZExtend.m in Sources */,
+				9D3145241B0C1F1F003E6333 /* KeychainItemWrapper.m in Sources */,
+				9D3145271B0C1F1F003E6333 /* rc4.cpp in Sources */,
+				9D3145381B0C1F1F003E6333 /* CZRequestObj.m in Sources */,
+				9D3145221B0C1F1F003E6333 /* CommonUtils.m in Sources */,
+				9D3145361B0C1F1F003E6333 /* ASIInputStream.m in Sources */,
+				9D3145231B0C1F1F003E6333 /* Md5Encrypt.m in Sources */,
+				9D3145401B0C1F1F003E6333 /* ServiceOperation.m in Sources */,
+				9D352FB01B16A828002DC8AE /* CZBaseObject.m in Sources */,
+				9D31452E1B0C1F1F003E6333 /* CZRequestConfig.m in Sources */,
+				9D31452A1B0C1F1F003E6333 /* sign_md5.c in Sources */,
+				9D3145351B0C1F1F003E6333 /* ASIHTTPRequest.m in Sources */,
+				9D352FB91B16A828002DC8AE /* WXPayConfig.m in Sources */,
+				9D31453E1B0C1F1F003E6333 /* MutilPointDetectController.m in Sources */,
+				9D3145331B0C1F1F003E6333 /* ASIDownloadCache.m in Sources */,
+				9D352FB51B16A828002DC8AE /* AlipayConfig.m in Sources */,
+				9D31452F1B0C1F1F003E6333 /* CZRequestHandler.m in Sources */,
+				9D3145341B0C1F1F003E6333 /* ASIFormDataRequest.m in Sources */,
+				9D3145301B0C1F1F003E6333 /* ASIAuthenticationDialog.m in Sources */,
+				9D352FBD1B16A828002DC8AE /* RechargeManager.m in Sources */,
+				9D3145321B0C1F1F003E6333 /* ASIDataDecompressor.m in Sources */,
+				9D3145441B0C1F1F003E6333 /* WldhSimplePingManager.m in Sources */,
+				9D352FB71B16A828002DC8AE /* PayConfigHandler.m in Sources */,
+				9D352FBB1B16A828002DC8AE /* PayTypeNode.m in Sources */,
+				9D31451F1B0C1F1F003E6333 /* NSString+CZExtend.m in Sources */,
+				9D3145281B0C1F1F003E6333 /* RC4Encrypt.mm in Sources */,
+				9D31453D1B0C1F1F003E6333 /* CZMyLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D3144AE1B0C1ED1003E6333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9D3144AF1B0C1ED1003E6333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = ../Libs;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D3144B11B0C1ED1003E6333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				INSTALL_PATH = ../Libs;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9D3144B21B0C1ED1003E6333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../Libs;
+				INSTALL_PATH = ../Libs;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D3144971B0C1ED1003E6333 /* Build configuration list for PBXProject "CZBaseLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3144AE1B0C1ED1003E6333 /* Debug */,
+				9D3144AF1B0C1ED1003E6333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3144B01B0C1ED1003E6333 /* Build configuration list for PBXNativeTarget "CZBaseLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3144B11B0C1ED1003E6333 /* Debug */,
+				9D3144B21B0C1ED1003E6333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D3144941B0C1ED1003E6333 /* Project object */;
+}

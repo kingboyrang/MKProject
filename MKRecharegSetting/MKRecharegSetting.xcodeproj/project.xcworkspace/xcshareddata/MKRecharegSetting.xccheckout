@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0FCAA11-0701-4417-88C7-EFE7C49C632E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MKRecharegSetting</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81FF1AEAE43D44462F3891FBA9E2285A111262C3</key>
+		<string>http://172.16.10.9/td-platform-ios/mk_phone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MKProject/MKRecharegSetting/MKRecharegSetting.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81FF1AEAE43D44462F3891FBA9E2285A111262C3</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://172.16.10.9/td-platform-ios/mk_phone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81FF1AEAE43D44462F3891FBA9E2285A111262C3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81FF1AEAE43D44462F3891FBA9E2285A111262C3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mk_phone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
